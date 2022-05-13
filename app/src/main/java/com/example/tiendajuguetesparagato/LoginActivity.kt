@@ -17,5 +17,12 @@ class LoginActivity : AppCompatActivity() {
             startActivity(lanzar)
         }
 
+
+        //Para entrar en la tienda despues de iniciar sesion
+        val btn_is = findViewById<Button>(R.id.button2)
+        btn_is.setOnClickListener{
+            val lanzar = Intent(this, TiendaJuguetesActivity::class.java)
+            startActivity(lanzar)
+        }
     }
 }
